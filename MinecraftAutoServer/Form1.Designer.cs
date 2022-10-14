@@ -87,7 +87,7 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(192, 25);
             this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Server Config";
+            this.textBox4.Text = "Ram Allocation";
             // 
             // Form1
             // 
