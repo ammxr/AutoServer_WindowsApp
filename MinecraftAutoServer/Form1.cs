@@ -31,5 +31,10 @@ namespace MinecraftAutoServer
         {
 
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
