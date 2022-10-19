@@ -32,15 +32,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.serverVersion = new System.Windows.Forms.ComboBox();
+            this.minRam = new System.Windows.Forms.TextBox();
+            this.maxRam = new System.Windows.Forms.TextBox();
+            this.importConfig = new System.Windows.Forms.Button();
+            this.importResourcePack = new System.Windows.Forms.Button();
+            this.importMods = new System.Windows.Forms.Button();
+            this.importServerIcon = new System.Windows.Forms.Button();
+            this.importMOTD = new System.Windows.Forms.Button();
+            this.serverName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -98,103 +98,106 @@
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Ram Allocation";
             // 
-            // comboBox1
+            // serverVersion
             // 
-            this.comboBox1.AccessibleName = "Select Version";
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.serverVersion.AccessibleName = "Select Version";
+            this.serverVersion.AllowDrop = true;
+            this.serverVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serverVersion.FormattingEnabled = true;
+            this.serverVersion.Items.AddRange(new object[] {
             "1.8.9",
             "1.9.11",
             "1.18.1"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 153);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Select Sever Version";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.serverVersion.Location = new System.Drawing.Point(12, 153);
+            this.serverVersion.Name = "serverVersion";
+            this.serverVersion.Size = new System.Drawing.Size(141, 21);
+            this.serverVersion.TabIndex = 4;
+            this.serverVersion.Text = "Select Sever Version";
+            this.serverVersion.SelectedIndexChanged += new System.EventHandler(this.serverVersion_SelectedIndexChanged);
             // 
-            // textBox5
+            // minRam
             // 
-            this.textBox5.AcceptsReturn = true;
-            this.textBox5.AccessibleName = "Minimum Ram:";
-            this.textBox5.HideSelection = false;
-            this.textBox5.Location = new System.Drawing.Point(12, 428);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(60, 20);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "Min";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.minRam.AcceptsReturn = true;
+            this.minRam.AccessibleName = "Minimum Ram:";
+            this.minRam.HideSelection = false;
+            this.minRam.Location = new System.Drawing.Point(12, 428);
+            this.minRam.Name = "minRam";
+            this.minRam.Size = new System.Drawing.Size(60, 20);
+            this.minRam.TabIndex = 5;
+            this.minRam.Text = "Min";
+            this.minRam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.minRam.TextChanged += new System.EventHandler(this.minRam_TextChanged);
             // 
-            // textBox6
+            // maxRam
             // 
-            this.textBox6.AcceptsReturn = true;
-            this.textBox6.AccessibleName = "Maximum Ram:";
-            this.textBox6.Location = new System.Drawing.Point(78, 428);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(63, 20);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = "Max";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.maxRam.AcceptsReturn = true;
+            this.maxRam.AccessibleName = "Maximum Ram:";
+            this.maxRam.Location = new System.Drawing.Point(78, 428);
+            this.maxRam.Name = "maxRam";
+            this.maxRam.Size = new System.Drawing.Size(63, 20);
+            this.maxRam.TabIndex = 6;
+            this.maxRam.Text = "Max";
+            this.maxRam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // importConfig
             // 
-            this.button1.Location = new System.Drawing.Point(12, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Import Config File";
-            this.button1.UseVisualStyleBackColor = true;
+            this.importConfig.Location = new System.Drawing.Point(12, 209);
+            this.importConfig.Name = "importConfig";
+            this.importConfig.Size = new System.Drawing.Size(141, 23);
+            this.importConfig.TabIndex = 7;
+            this.importConfig.Text = "Import Config File";
+            this.importConfig.UseVisualStyleBackColor = true;
+            this.importConfig.Click += new System.EventHandler(this.importConfig_Click);
             // 
-            // button2
+            // importResourcePack
             // 
-            this.button2.Location = new System.Drawing.Point(12, 362);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Import Resource Pack";
-            this.button2.UseVisualStyleBackColor = true;
+            this.importResourcePack.Location = new System.Drawing.Point(12, 362);
+            this.importResourcePack.Name = "importResourcePack";
+            this.importResourcePack.Size = new System.Drawing.Size(141, 23);
+            this.importResourcePack.TabIndex = 8;
+            this.importResourcePack.Text = "Import Resource Pack";
+            this.importResourcePack.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // importMods
             // 
-            this.button3.Location = new System.Drawing.Point(12, 238);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Import Mods";
-            this.button3.UseVisualStyleBackColor = true;
+            this.importMods.Location = new System.Drawing.Point(12, 238);
+            this.importMods.Name = "importMods";
+            this.importMods.Size = new System.Drawing.Size(141, 23);
+            this.importMods.TabIndex = 9;
+            this.importMods.Text = "Import Mods";
+            this.importMods.UseVisualStyleBackColor = true;
+            this.importMods.Click += new System.EventHandler(this.importMods_Click);
             // 
-            // button5
+            // importServerIcon
             // 
-            this.button5.Location = new System.Drawing.Point(12, 333);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 23);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Import Server Icon";
-            this.button5.UseVisualStyleBackColor = true;
+            this.importServerIcon.Location = new System.Drawing.Point(12, 333);
+            this.importServerIcon.Name = "importServerIcon";
+            this.importServerIcon.Size = new System.Drawing.Size(141, 23);
+            this.importServerIcon.TabIndex = 11;
+            this.importServerIcon.Text = "Import Server Icon";
+            this.importServerIcon.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // importMOTD
             // 
-            this.button6.Location = new System.Drawing.Point(12, 304);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(129, 23);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Import MOTD";
-            this.button6.UseVisualStyleBackColor = true;
+            this.importMOTD.Location = new System.Drawing.Point(12, 304);
+            this.importMOTD.Name = "importMOTD";
+            this.importMOTD.Size = new System.Drawing.Size(141, 23);
+            this.importMOTD.TabIndex = 10;
+            this.importMOTD.Text = "Import MOTD";
+            this.importMOTD.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // serverName
             // 
-            this.textBox7.AcceptsReturn = true;
-            this.textBox7.AccessibleName = "Minimum Ram:";
-            this.textBox7.HideSelection = false;
-            this.textBox7.Location = new System.Drawing.Point(12, 183);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(129, 20);
-            this.textBox7.TabIndex = 12;
-            this.textBox7.Text = "Enter Server Name";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.serverName.AcceptsReturn = true;
+            this.serverName.AccessibleName = "Minimum Ram:";
+            this.serverName.HideSelection = false;
+            this.serverName.Location = new System.Drawing.Point(12, 183);
+            this.serverName.Name = "serverName";
+            this.serverName.Size = new System.Drawing.Size(141, 20);
+            this.serverName.TabIndex = 12;
+            this.serverName.Text = "Enter Server Name";
+            this.serverName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.serverName.TextChanged += new System.EventHandler(this.serverName_TextChanged);
             // 
             // Form1
             // 
@@ -202,15 +205,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(479, 483);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.serverName);
+            this.Controls.Add(this.importServerIcon);
+            this.Controls.Add(this.importMOTD);
+            this.Controls.Add(this.importMods);
+            this.Controls.Add(this.importResourcePack);
+            this.Controls.Add(this.importConfig);
+            this.Controls.Add(this.maxRam);
+            this.Controls.Add(this.minRam);
+            this.Controls.Add(this.serverVersion);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -228,15 +231,15 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox serverVersion;
+        private System.Windows.Forms.TextBox minRam;
+        private System.Windows.Forms.TextBox maxRam;
+        private System.Windows.Forms.Button importConfig;
+        private System.Windows.Forms.Button importResourcePack;
+        private System.Windows.Forms.Button importMods;
+        private System.Windows.Forms.Button importServerIcon;
+        private System.Windows.Forms.Button importMOTD;
+        private System.Windows.Forms.TextBox serverName;
     }
 }
 

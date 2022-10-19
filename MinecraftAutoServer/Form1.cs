@@ -27,17 +27,17 @@ namespace MinecraftAutoServer
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void serverVersion_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void serverName_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        // FOCUSSED TEXTBOX TEMPORARY CODE
+        // FOCUSSED TEXTBOX TEMPORARY CODE TO ERASE TEMP FILLING
         private void TextBox_Focus(object sender, RoutedEventArgs e)
         {
             if (!hasBeenClicked)
@@ -49,4 +49,19 @@ namespace MinecraftAutoServer
 
 
         }
-}
+
+        private void importConfig_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void importMods_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minRam_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
