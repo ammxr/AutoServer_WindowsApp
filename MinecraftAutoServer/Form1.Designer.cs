@@ -41,6 +41,8 @@
             this.importServerIcon = new System.Windows.Forms.Button();
             this.importMOTD = new System.Windows.Forms.Button();
             this.serverName = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -66,7 +68,7 @@
             this.textBox2.Location = new System.Drawing.Point(12, 122);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(192, 25);
+            this.textBox2.Size = new System.Drawing.Size(141, 25);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Server Config";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -80,7 +82,7 @@
             this.textBox3.Location = new System.Drawing.Point(12, 277);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(192, 25);
+            this.textBox3.Size = new System.Drawing.Size(141, 25);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Server Decor";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -94,9 +96,9 @@
             this.textBox4.Location = new System.Drawing.Point(12, 397);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(192, 25);
+            this.textBox4.Size = new System.Drawing.Size(141, 25);
             this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Ram Allocation";
+            this.textBox4.Text = "Ram Limits";
             // 
             // serverVersion
             // 
@@ -199,12 +201,34 @@
             this.serverName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.serverName.TextChanged += new System.EventHandler(this.serverName_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Location = new System.Drawing.Point(238, 153);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(229, 232);
+            this.panel1.TabIndex = 13;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.White;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Eras Bold ITC", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.textBox5.Location = new System.Drawing.Point(238, 122);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(141, 25);
+            this.textBox5.TabIndex = 14;
+            this.textBox5.Text = "Preview";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(479, 483);
+            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.serverName);
             this.Controls.Add(this.importServerIcon);
             this.Controls.Add(this.importMOTD);
@@ -218,6 +242,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -240,6 +265,8 @@
         private System.Windows.Forms.Button importServerIcon;
         private System.Windows.Forms.Button importMOTD;
         private System.Windows.Forms.TextBox serverName;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
