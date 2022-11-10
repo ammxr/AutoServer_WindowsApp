@@ -27,28 +27,19 @@ namespace MinecraftAutoServer
 
         }
 
-        private void serverVersion_SelectedIndexChanged(object sender, EventArgs e)
+        private void serverVersion_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         private void serverName_TextChanged(object sender, EventArgs e)
         {
-
+            string serverNameSelected;
+            serverNameSelected = serverName.Text;
+            Console.WriteLine(serverNameSelected);
         }
 
-        // FOCUSSED TEXTBOX TEMPORARY CODE TO ERASE TEMP FILLING
-        private void TextBox_Focus(object sender, RoutedEventArgs e)
-        {
-            if (!hasBeenClicked)
-            {
-                TextBox box = sender as TextBox;
-                box.Text = String.Empty;
-                hasBeenClicked = true;
-            }
 
-
-        }
 
         private void importConfig_Click(object sender, EventArgs e)
         {
@@ -65,3 +56,4 @@ namespace MinecraftAutoServer
 
         }
     }
+}

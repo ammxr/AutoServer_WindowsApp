@@ -115,7 +115,7 @@
             this.serverVersion.Size = new System.Drawing.Size(141, 21);
             this.serverVersion.TabIndex = 4;
             this.serverVersion.Text = "Select Sever Version";
-            this.serverVersion.SelectedIndexChanged += new System.EventHandler(this.serverVersion_SelectedIndexChanged);
+            this.serverVersion.SelectedIndexChanged += new System.EventHandler(this.serverVersion_TextChanged);
             // 
             // minRam
             // 
